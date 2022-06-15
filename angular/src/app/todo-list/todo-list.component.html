@@ -1,0 +1,10 @@
+<input
+  type="text"
+  id="content"
+  placeholder="Enter Todo"
+  (change)="handleChange($event)"
+/>
+
+<ul>
+  <li *ngFor="let todo of todos">{{ todo.content }}</li>
+</ul>
